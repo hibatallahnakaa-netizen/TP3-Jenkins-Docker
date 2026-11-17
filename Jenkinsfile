@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -44,7 +45,6 @@ pipeline {
             }
         }
 
-    
         stage('Push (Docker Hub)') {
             steps {
                 withCredentials([usernamePassword(
@@ -68,7 +68,7 @@ pipeline {
                 }
             }
         }
-
+    }
 
     post {
         success {
