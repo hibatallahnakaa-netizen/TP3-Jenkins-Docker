@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        IMAGE = 'HIBAT/monapp'
+        IMAGE = 'hibatallahnakaa/monapp'
         TAG = "build-${env.BUILD_NUMBER}"
     }
 
